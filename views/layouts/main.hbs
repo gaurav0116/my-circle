@@ -52,7 +52,8 @@
     var loggedInUserId = "{{user._id}}";
     console.log("loggedInUserId => ", loggedInUserId);
     //console.log($("#user-id").data("user-id"), "userID")
-      var socket = io(`http://localhost:3000`, {
+    const baseURL = window.location.origin;
+      var socket = io(baseURL, {
         transports: ["websocket"],
         query: {
           "userId": loggedInUserId   // send logged in  user id
