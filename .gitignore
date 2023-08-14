@@ -9,3 +9,4 @@ public/uploads/posts
 
 # env file
 .env
+.vercel
